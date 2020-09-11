@@ -1,0 +1,10 @@
+.travel {
+    background-color: gray;
+    padding: 30px 50px;
+    width: 600px;
+    color: gray;
+}
+
+div {
+    display: block;
+}
