@@ -1,0 +1,33 @@
+.travel {
+    background-color: #fed9b8;
+    padding: 30px 50px;
+    margin-left: 15%;
+    width: 600px;
+    color: #935b07;
+    display: block;
+    box-shadow: 3em;
+}
+
+.mideast {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+/* input.clear-btn-input:not([type=radio]):not([type=checkbox]) {
+    padding-right: 2.5em;
+}
+
+.text.icon-before input, .text.icon-before textarea {
+    padding-left: 1.75em;
+} */
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+

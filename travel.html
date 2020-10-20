@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/travel.css" rel="stylesheet" />
+    <link href="css/travelsearch.css" rel="stylesheet" />
+
+    <script src="js/jquery.js"></script>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
+    <!-- <script
+       src=https://maps.googleapis.com/maps/api/js?key=AIzaSyDKMa2rynIvrr6iZwMHbkkOU4etM4pv6TA&callback=initMap"
+        type="text/javascript">
+        </script> -->
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="./style.css" /> -->
+    <!-- <script src="./index.js"></script> -->
+
+
     <title>Travel</title>
 </head>
+
 <body>
     <div class="travel">
-        <section class="travelsearch">
-            <h1>Travel the Middle East</h1>
+        <div class="travelsearch">
+            <h1 class="mideast">Travel the Middle East</h1>
             <h3> Search to locate your choice of Asia </h3>
-        </section>
-
+        </div>
     </div>
+
+    <!-- <script>
+       let autocomplete;
+function initAutocomplete() {
+  autocomplete = new google.maps.places.Autocomplete(
+    document.getElementById('autocomplete'),
+    {
+      types: ['establishment'],
+      componentRestrictions: {'country' : ['AU']},
+      fields: ['place_id', 'geometry', 'name']
+    });
+}
+   </script> -->
+
+    <div searchnfly>
+        <input id="autocomplete" class="controls" type="text" placeholder="Search Location" />
+        <div id="map"></div>
+        <label class="start" for="start">Start date:</label>
+        <input type="date" id="start" name="trip-start" value="" min="" max="2030-12-31">
+
+        <label class="end" for="end">End date:</label>
+        <input type="date" id="end" name="trip-end" value="" min="" max="2030-12-31">
+    </div>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKMa2rynIvrr6iZwMHbkkOU4etM4pv6TA&callback&libraries=places&callback=initAutocomplete"
+        async defer></script>
 </body>
+
 </html>
